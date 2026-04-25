@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/raw/
+data/interim/
+*.parquet
+
+# IGNORE ALL MODELS
+models/**/*.pkl
+
+# KEEP ONLY CSV + SHAP OUTPUTS
+!models/experiments/win/artifacts/*.csv
+!models/experiments/score/artifacts/*.csv
+!models/experiments/player/artifacts/*.csv
+!models/experiments/win/shap_outputs/*.csv
+!models/experiments/win/shap_outputs/*.png
